@@ -11,6 +11,7 @@ from .deformable_detr_layers import (DeformableDetrTransformerDecoder,
                                      DeformableDetrTransformerEncoderLayer)
 from .detr_layers import (DetrTransformerDecoder, DetrTransformerDecoderLayer,
                           DetrTransformerEncoder, DetrTransformerEncoderLayer)
+from .hybrid_encoder import (HybridEncoder, TransformerEncoderLayer)
 from .dino_layers import CdnQueryGenerator, DinoTransformerDecoder
 from .grounding_dino_layers import (GroundingDinoTransformerDecoder,
                                     GroundingDinoTransformerDecoderLayer,
@@ -21,6 +22,8 @@ from .mask2former_layers import (Mask2FormerTransformerDecoder,
 from .utils import (MLP, AdaptivePadding, ConditionalAttention, DynamicConv,
                     PatchEmbed, PatchMerging, coordinate_to_encoding,
                     inverse_sigmoid, nchw_to_nlc, nlc_to_nchw)
+from .hybrid_encoder import HybridEncoder
+from .dfine_decoder import DFINETransformer
 
 __all__ = [
     'nlc_to_nchw', 'nchw_to_nlc', 'AdaptivePadding', 'PatchEmbed',
@@ -37,5 +40,6 @@ __all__ = [
     'CdnQueryGenerator', 'Mask2FormerTransformerEncoder',
     'Mask2FormerTransformerDecoderLayer', 'Mask2FormerTransformerDecoder',
     'GroundingDinoTransformerDecoderLayer', 'GroundingDinoTransformerEncoder',
-    'GroundingDinoTransformerDecoder'
+    'GroundingDinoTransformerDecoder', 'HybridEncoder', 'TransformerEncoderLayer',
+    'HybridEncoder', 'DFINETransformer'
 ]

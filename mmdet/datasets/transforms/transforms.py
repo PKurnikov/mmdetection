@@ -130,7 +130,6 @@ def imrescale(
     else:
         return rescaled_img
 
-
 @TRANSFORMS.register_module()
 class Resize(MMCV_Resize):
     """Resize images & bbox & seg.

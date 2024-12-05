@@ -73,6 +73,9 @@ class CocoDataset(BaseDetDataset):
         self.cat_img_map = copy.deepcopy(self.coco.cat_img_map)
 
         img_ids = self.coco.get_img_ids()
+        img_ids.clear()
+        img_ids.append(23033)
+        # img_ids *= 1000
         data_list = []
         total_ann_ids = []
         for img_id in img_ids:
